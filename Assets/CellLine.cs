@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CityCell : MonoBehaviour
+public class CellLine : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
