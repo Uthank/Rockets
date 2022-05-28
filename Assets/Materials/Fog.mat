@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fog
+  m_Shader: {fileID: -6465566751694194690, guid: 3fb3f4a814651064da5f688d46fe83f8, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 10307, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_093f9b26e1b543049e7a6cc6924863ff: -20
+    - Vector1_15f41b1755f34af38b9f8d3895af7f92: 5
+    - Vector1_1aedfa55c6b14a3f9ccae240f5811e5a: 625.3
+    - Vector1_31da6c7815a14ecd9e24b07b5494410c: 143.35
+    - Vector1_3a772e0aefa04c04925c5202c3afd5c1: 1
+    - Vector1_3c2ed8c3fa1e498b90766193aef5a70e: 1
+    - Vector1_916e5322606348c5a203e9c45695e165: 0.14
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - _fogDencity: 0.06
+    m_Colors:
+    - Color_061071cf86494380a9d5912f6afbd5cc: {r: 0.5647059, g: 0.6862745, b: 0.92941177, a: 0}
+    - Color_17695c41989a49c2a04d3f1f58b78d52: {r: 1, g: 1, b: 1, a: 1}
+    - Color_6755503718c846aa95dac3e48d59c85d: {r: 0, g: 0, b: 0, a: 0}
+    - Vector4_55f06c6ae48c4cedb861c198a2fa686b: {r: 1, g: 1, b: 1, a: 90}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.35686275}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _fogColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
