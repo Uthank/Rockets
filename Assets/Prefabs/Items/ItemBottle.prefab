@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8320377686777123913}
   - component: {fileID: 5252824316446527845}
   - component: {fileID: 7035599934869861196}
+  - component: {fileID: -4610553408091057415}
   m_Layer: 0
   m_Name: ItemBottle
   m_TagString: Untagged
@@ -61,6 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fuelValue: -10
+  _OnCapturedEffect: {fileID: 4720602252461444539, guid: 464d6992919bb94469d4d0b0f841ebda, type: 3}
 --- !u!114 &7035599934869861196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +76,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 30
+--- !u!114 &-4610553408091057415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527093598744524905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d36d29e8bdbb234e9f9719c2680afa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dissolveSpeed: 5
 --- !u!1001 &2812236670126304749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84,6 +99,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 651f140755b767e48babb715ba7533cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 651f140755b767e48babb715ba7533cf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.82521
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 651f140755b767e48babb715ba7533cf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.82521
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 651f140755b767e48babb715ba7533cf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.82521
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 651f140755b767e48babb715ba7533cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -125,10 +152,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1461304994638716399, guid: 651f140755b767e48babb715ba7533cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5ee5b81a0fd9da45ad7d35ec2aba675, type: 2}
+    - target: {fileID: -678588488315902003, guid: 651f140755b767e48babb715ba7533cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5ee5b81a0fd9da45ad7d35ec2aba675, type: 2}
     - target: {fileID: 919132149155446097, guid: 651f140755b767e48babb715ba7533cf, type: 3}
       propertyPath: m_Name
       value: ItemBottle
       objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: 651f140755b767e48babb715ba7533cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5ee5b81a0fd9da45ad7d35ec2aba675, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 651f140755b767e48babb715ba7533cf, type: 3}
 --- !u!4 &2345719167028152838 stripped

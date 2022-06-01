@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1806834891119808250}
   - component: {fileID: 6181626918107753144}
   - component: {fileID: 7483114629433828790}
+  - component: {fileID: 1839208178298493736}
   m_Layer: 0
   m_Name: ItemCanister
   m_TagString: Untagged
@@ -60,6 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fuelValue: 10
+  _OnCapturedEffect: {fileID: 1945612979972426921, guid: 3d2050901aa8c284da0eeb86f73bc306, type: 3}
 --- !u!114 &7483114629433828790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,6 +75,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 30
+--- !u!114 &1839208178298493736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292173027446292833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d36d29e8bdbb234e9f9719c2680afa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dissolveSpeed: 5
 --- !u!1001 &3862778421679151350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83,6 +98,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 39db74cd5d999cd4ab9cd358ed8eb3f2, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 39db74cd5d999cd4ab9cd358ed8eb3f2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 39db74cd5d999cd4ab9cd358ed8eb3f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 39db74cd5d999cd4ab9cd358ed8eb3f2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39db74cd5d999cd4ab9cd358ed8eb3f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -124,6 +151,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7766706150058806071, guid: 39db74cd5d999cd4ab9cd358ed8eb3f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5ee5b81a0fd9da45ad7d35ec2aba675, type: 2}
+    - target: {fileID: 360621483249714701, guid: 39db74cd5d999cd4ab9cd358ed8eb3f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5ee5b81a0fd9da45ad7d35ec2aba675, type: 2}
     - target: {fileID: 919132149155446097, guid: 39db74cd5d999cd4ab9cd358ed8eb3f2, type: 3}
       propertyPath: m_Name
       value: ItemCanister

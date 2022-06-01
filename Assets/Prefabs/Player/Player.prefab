@@ -86,6 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fuel: 25
   _rockets: []
+  _swapRocketEffect: {fileID: 6555501740466703804, guid: ba80fe74fa9ed744caaa68709de2b06a, type: 3}
 --- !u!114 &6563916315336798774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,8 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd39e7cc2551084d9181f316763c0d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bullet: {fileID: 5806487411830311170, guid: f83d8269a41712f4496490794119e81c, type: 3}
+  _bullet: {fileID: 5806487411830311170, guid: 934fbb4802ae5de45985f316aab35283, type: 3}
   _shootDelay: 0.3
+  _attackParticles: {fileID: 1912911055848020118, guid: 621ab02be22b7e840b62de70af94b24e, type: 3}
 --- !u!136 &5378185097976503019
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class Mover : MonoBehaviour
     [SerializeField] private float _deviationDistance = 1.5f;
     [SerializeField] private float _tailSpeed;
     [SerializeField] private float _tailLenght = 3f;
-    [SerializeField] private float _speed = 15f;
+    [SerializeField] private float _speed = 10f;
     
     private InputHandler _inputHandler;
     
@@ -17,8 +17,8 @@ public class Mover : MonoBehaviour
     private Vector3 _tailOffset;
     private Vector3 _tailDirection;
     private Queue<Vector3> _positionHistory = new Queue<Vector3>();
-    private float _frequency = .01f;
-    private int _tailLag = 5;
+    private float _frequency = .001f;
+    private int _tailLag = 10;
     private float _nextTime;
     private Vector3 _nextTailPosition;
     private bool _isActive = true;
@@ -68,6 +68,7 @@ public class Mover : MonoBehaviour
 
     public void Stop()
     {
+        _speed = 3f;
         _isActive = false;
         _moveBox.Stop();
     }

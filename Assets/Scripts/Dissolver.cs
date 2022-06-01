@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RocketModel : MonoBehaviour
+public class Dissolver : MonoBehaviour
 {
     [SerializeField] private float _dissolveSpeed = 1;
 

@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float _speed = 1f;
+    [SerializeField] private float _speed = 10f;
     [SerializeField] private float _rotationSpeed = 1f;
+    [SerializeField] private Rocket _target;
+    [SerializeField] private ParticleSystem _damageParticles;
     
-    private Rocket _target;
     private bool _targetKilled = false;
 
     private void OnTriggerEnter(Collider other)
@@ -14,6 +15,8 @@ public class Bullet : MonoBehaviour
         if (other.TryGetComponent<Rocket>(out Rocket target) == true && target == _target)
         {
             target.Damage();
+            var damageParticles = Instantiate(_damageParticles, transform.position, Quaternion.identity);
+            Destroy(damageParticles.gameObject, damageParticles.main.duration);
             _target.GetComponent<Rocket>().Killed -= OnTargetKilled;
             Destroy(gameObject);
         }
@@ -35,12 +38,12 @@ public class Bullet : MonoBehaviour
 
     private void Move()
     {
-        transform.position += transform.rotation * Vector3.forward * _speed;
+        transform.position += transform.rotation * Vector3.forward * (_speed * Time.deltaTime);
     }
 
     private void Rotate()
     {
-        Vector3 direction = _target.transform.position - transform.position;
+        Vector3 direction = _target.transform.position - _target.transform.forward - transform.position;
         transform.rotation =  Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, direction, _rotationSpeed, 0f));
     }
 

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3930497710212240397}
   - component: {fileID: 5806487411830311170}
-  - component: {fileID: 2303851099451706384}
+  - component: {fileID: 34765534260227727}
   m_Layer: 0
   m_Name: Bullet Blue
   m_TagString: Untagged
@@ -45,10 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc107aa1b2c7f9b4080b9c301340fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0.1
+  _speed: 10
   _rotationSpeed: 0.08
---- !u!136 &2303851099451706384
-CapsuleCollider:
+  _target: {fileID: 0}
+  _damageParticles: {fileID: 6072637579947471045, guid: 2eafede58ac0dc74b8636e3b4d53e431, type: 3}
+--- !u!135 &34765534260227727
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -57,10 +59,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.22
-  m_Height: 1.07
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: -0.48}
+  serializedVersion: 2
+  m_Radius: 0.37
+  m_Center: {x: 0, y: 0, z: -0.26}
 --- !u!1001 &5893251262037640074
 PrefabInstance:
   m_ObjectHideFlags: 0

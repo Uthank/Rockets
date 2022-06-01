@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5661014880782458881}
   - component: {fileID: -3241733621198169121}
   - component: {fileID: -3639411501200311318}
+  - component: {fileID: -9091686177609278260}
   m_Layer: 0
   m_Name: ItemCoin
   m_TagString: Untagged
@@ -61,6 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fuelValue: -5
+  _OnCapturedEffect: {fileID: 4720602252461444539, guid: 464d6992919bb94469d4d0b0f841ebda, type: 3}
 --- !u!114 &-3639411501200311318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +76,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 30
+--- !u!114 &-9091686177609278260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4904965406474905848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d36d29e8bdbb234e9f9719c2680afa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dissolveSpeed: 5
 --- !u!1001 &4118927814942423688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84,6 +99,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.85172
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.85172
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.85172
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_LocalPosition.x
@@ -125,6 +152,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5ee5b81a0fd9da45ad7d35ec2aba675, type: 2}
     - target: {fileID: 919132149155446097, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_Name
       value: ItemCoin

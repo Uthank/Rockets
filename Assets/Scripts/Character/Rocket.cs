@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class Rocket : MonoBehaviour, IDamageable
 {
     [SerializeField] protected int _fuel = 25;
+    [SerializeField] protected ParticleSystem _deadParticles;
 
     public event UnityAction Killed;
     
@@ -18,6 +19,8 @@ public class Rocket : MonoBehaviour, IDamageable
     protected void Die()
     {
         Killed?.Invoke();
+        var particles = Instantiate(_deadParticles, transform.position, Quaternion.identity);
+        Destroy(particles.gameObject, particles.main.duration);
         Destroy(gameObject);
     }
 }

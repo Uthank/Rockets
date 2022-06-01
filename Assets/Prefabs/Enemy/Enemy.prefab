@@ -75,8 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd39e7cc2551084d9181f316763c0d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bullet: {fileID: 0}
+  _bullet: {fileID: 5806487411830311170, guid: f83d8269a41712f4496490794119e81c, type: 3}
   _shootDelay: 0
+  _attackParticles: {fileID: 1912911055848020118, guid: 621ab02be22b7e840b62de70af94b24e, type: 3}
 --- !u!54 &-3313776133843596685
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d36d29e8bdbb234e9f9719c2680afa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _material: {fileID: 2100000, guid: 96f7c1ee159681a43a4249fac2622d47, type: 2}
+  _dissolveSpeed: 1
 --- !u!1001 &255077524742445955
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class Player : Rocket
 {
-    [SerializeField] private RocketModel[] _rockets;
+    [SerializeField] private Dissolver[] _rockets;
+    [SerializeField] private ParticleSystem _swapRocketEffect;
 
     private int _minFuel = 1;
     private int _maxFuel = 100;
@@ -20,11 +21,7 @@ public class Player : Rocket
 
     public override void Damage()
     {
-        _fuel--;
-
-        if (_fuel <= 0)
-            Die();
-
+        base.Damage();
         FuelChanged?.Invoke(_fuel);
         SwitchRocketModel();
     }
@@ -43,6 +40,8 @@ public class Player : Rocket
 
         if (FuelLevel != _currentModel)
         {
+            var swapRocketEffect = Instantiate(_swapRocketEffect, transform);
+            Destroy(swapRocketEffect.gameObject, swapRocketEffect.main.duration);
             _rockets[_currentModel].Dissolve();
             _currentModel = FuelLevel;
             _rockets[_currentModel].Resolve();
