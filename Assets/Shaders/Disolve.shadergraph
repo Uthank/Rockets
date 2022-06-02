@@ -91,7 +91,7 @@
             "m_Id": "e8c5ae96717d4e479907346bb97ccb64"
         },
         {
-            "m_Id": "40cc98548330418191e42759033fdd39"
+            "m_Id": "44250818f833427286e0300ea65b9d3f"
         }
     ],
     "m_GroupDatas": [],
@@ -339,7 +339,7 @@
                 "m_Id": "74ed300938ef44508745fd5701675653"
             },
             {
-                "m_Id": "40cc98548330418191e42759033fdd39"
+                "m_Id": "44250818f833427286e0300ea65b9d3f"
             }
         ]
     },
@@ -425,7 +425,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalLitSubTarget",
     "m_ObjectId": "05bb53fe9f8841d0a4fa26e85d7d3485",
-    "m_WorkflowMode": 1,
+    "m_WorkflowMode": 0,
     "m_NormalDropOffSpace": 0,
     "m_ClearCoat": false
 }
@@ -931,11 +931,11 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
-    "m_ObjectId": "40cc98548330418191e42759033fdd39",
+    "m_ObjectId": "44250818f833427286e0300ea65b9d3f",
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "SurfaceDescription.Metallic",
+    "m_Name": "SurfaceDescription.Specular",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -948,7 +948,7 @@
     },
     "m_Slots": [
         {
-            "m_Id": "d66afb5094cb4a06ac965ac1922996d8"
+            "m_Id": "93f6db66773b4228b9274c6694d4486c"
         }
     ],
     "synonyms": [],
@@ -958,7 +958,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_SerializedDescriptor": "SurfaceDescription.Metallic"
+    "m_SerializedDescriptor": "SurfaceDescription.Specular"
 }
 
 {
@@ -1438,6 +1438,36 @@
     },
     "m_Modifiable": true,
     "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.ColorRGBMaterialSlot",
+    "m_ObjectId": "93f6db66773b4228b9274c6694d4486c",
+    "m_Id": 0,
+    "m_DisplayName": "Specular Color",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Specular",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": [],
+    "m_ColorMode": 0,
+    "m_DefaultColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5,
+        "a": 1.0
+    }
 }
 
 {
@@ -2088,21 +2118,6 @@
         "z": 0.0,
         "w": 0.0
     },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "d66afb5094cb4a06ac965ac1922996d8",
-    "m_Id": 0,
-    "m_DisplayName": "Metallic",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Metallic",
-    "m_StageCapability": 2,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
     "m_Labels": []
 }
 

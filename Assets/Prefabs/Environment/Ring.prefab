@@ -146,3 +146,4 @@ MonoBehaviour:
   _radius: 3
   _alphaSpeed: 1
   _alpha: 1
+  _maxAlpha: 0.75

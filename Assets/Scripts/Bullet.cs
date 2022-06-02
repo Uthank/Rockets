@@ -15,8 +15,13 @@ public class Bullet : MonoBehaviour
         if (other.TryGetComponent<Rocket>(out Rocket target) == true && target == _target)
         {
             target.Damage();
-            var damageParticles = Instantiate(_damageParticles, transform.position, Quaternion.identity);
-            Destroy(damageParticles.gameObject, damageParticles.main.duration);
+            
+            if (_damageParticles != null)
+            {
+                var damageParticles = Instantiate(_damageParticles, transform.position, Quaternion.identity);
+                Destroy(damageParticles.gameObject, damageParticles.main.duration);
+            }
+            
             _target.GetComponent<Rocket>().Killed -= OnTargetKilled;
             Destroy(gameObject);
         }

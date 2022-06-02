@@ -126,7 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_LocalRotation.x
@@ -134,11 +134,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -146,7 +146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7adec98ff0235dd4dae801a0e1a31378, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4248356226040597367, guid: 3daace9a2250c6349859f96c34094264, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.534
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4248356226040597367, guid: 3daace9a2250c6349859f96c34094264, type: 3}
       propertyPath: m_LocalPosition.z
@@ -217,6 +217,14 @@ PrefabInstance:
     - target: {fileID: 4248356226040597367, guid: 3daace9a2250c6349859f96c34094264, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987477328788148403, guid: 3daace9a2250c6349859f96c34094264, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987477328788148403, guid: 3daace9a2250c6349859f96c34094264, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8816244946877758139, guid: 3daace9a2250c6349859f96c34094264, type: 3}
       propertyPath: m_Name

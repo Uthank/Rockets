@@ -38,7 +38,7 @@ public class Finish : MonoBehaviour
     {
         player.GetComponent<Mover>().Stop();
         _mainCamera.MoveCloser();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         player.GetComponent<Attacker>().Activate(_enemy);
         _enemy.GetComponent<Attacker>().Activate(player);
     }

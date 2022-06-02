@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3689016233530339716}
   - component: {fileID: 4857568662890141011}
   - component: {fileID: 3699682639561940335}
-  - component: {fileID: 2317415266962822548}
   - component: {fileID: -2432153840721680385}
+  - component: {fileID: 1928857051870746691}
   m_Layer: 0
   m_Name: Meteor Flamed
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1821892133814805978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0148274, y: 1.0148274, z: 1.0148274}
   m_Children:
   - {fileID: 6075196759635053615}
   - {fileID: 5764324620473078047}
@@ -63,19 +63,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fuelValue: -30
   _OnCapturedEffect: {fileID: 4720602252461444539, guid: 464d6992919bb94469d4d0b0f841ebda, type: 3}
---- !u!114 &2317415266962822548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821892133814805978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e896d2864d944884584a21a11ddcd383, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotateSpeed: 30
 --- !u!114 &-2432153840721680385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +76,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dissolveSpeed: 5
+--- !u!114 &1928857051870746691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821892133814805978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc107aa1b2c7f9b4080b9c301340fb47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 8
+  _rotationSpeed: 0.01
+  _target: {fileID: 0}
+  _damageParticles: {fileID: 0}
 --- !u!1001 &6036466440022502340
 PrefabInstance:
   m_ObjectHideFlags: 0

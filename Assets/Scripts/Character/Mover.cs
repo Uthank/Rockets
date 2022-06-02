@@ -68,7 +68,7 @@ public class Mover : MonoBehaviour
 
     public void Stop()
     {
-        _speed = 3f;
+        _speed = 1.5f;
         _isActive = false;
         _moveBox.Stop();
     }
