@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float _speed = 10f;

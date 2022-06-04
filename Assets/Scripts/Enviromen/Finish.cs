@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class Finish : MonoBehaviour
 {
     [SerializeField] private Enemy _enemy;

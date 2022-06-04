@@ -1,6 +1,7 @@
 using Unity.Mathematics;
 using UnityEngine;
 
+[RequireComponent(typeof(Dissolver), typeof(Collider))]
 public class Interactor : MonoBehaviour
 {
     [SerializeField] private int _fuelValue;

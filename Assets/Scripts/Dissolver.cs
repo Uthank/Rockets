@@ -8,7 +8,6 @@ public class Dissolver : MonoBehaviour
 
     private const string _dissolveParametr = "_dissolve";
     private IEnumerator _routine;
-
     private List<Material> _materials = new List<Material>();
 
     private void Awake()

@@ -6,6 +6,7 @@ public class UIEffectRotate : MonoBehaviour
     [SerializeField] private float _duration = 1/3f;
 
     private float _speed;
+    private float _degrees = 180;
 
     private void Awake()
     {
@@ -19,7 +20,6 @@ public class UIEffectRotate : MonoBehaviour
 
     private IEnumerator Rotate()
     {
-        var _degrees = 180;
         var startRotation = Quaternion.Euler(0, 0, -_degrees);
         var endRotation = Quaternion.Euler(0, 0, 0);
         transform.localRotation = startRotation;

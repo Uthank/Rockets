@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class City : MonoBehaviour
 {
@@ -12,8 +10,7 @@ public class City : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private CellLine _cellLine;
 
-    private Queue<CellLine> _city = new Queue<CellLine>();
-    private int _lastLine;
+    private readonly Queue<CellLine> _city = new Queue<CellLine>();
     private float _playerFarnessBreakpoint;
 
     private void Awake()
@@ -21,7 +18,6 @@ public class City : MonoBehaviour
         for (var i = 0; i < _fieldOfView.y; i++)
         {
             CellLine cellLine = Instantiate(_cellLine,new Vector3(0, 0, _buildingCellScale * i),Quaternion.identity, transform);
-            //var cellLine = new CityCell[_fieldOfView.x];
             
             for (int j = 0; j < _fieldOfView.x; j++)
             {
@@ -33,7 +29,6 @@ public class City : MonoBehaviour
             _city.Enqueue(cellLine);
         }
 
-        _lastLine = _fieldOfView.y;
         _playerFarnessBreakpoint = _buildingCellScale;
     }
 

@@ -26,7 +26,7 @@ public class Ringer : MonoBehaviour
         {
             _breakpoint += _frequency;
             var ring = _rings.Dequeue();
-            ring.transform.position += Vector3.forward * _frequency * _count;
+            ring.transform.position += Vector3.forward * (_frequency * _count);
             ring.ResetAlpha();
             _rings.Enqueue(ring);
         }
