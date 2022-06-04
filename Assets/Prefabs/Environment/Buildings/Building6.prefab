@@ -100,6 +100,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building6
       objectReference: {fileID: 0}
+    - target: {fileID: 4128306878669338638, guid: 396e43a30a77fd84bab5bf151baa72e9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a2f674458450fa429611fc3fa5cc2cf, type: 2}
+    - target: {fileID: 8028633889563768410, guid: 396e43a30a77fd84bab5bf151baa72e9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a2f674458450fa429611fc3fa5cc2cf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 396e43a30a77fd84bab5bf151baa72e9, type: 3}
 --- !u!4 &6084470399324124514 stripped
